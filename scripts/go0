@@ -19,7 +19,7 @@ def unpause(gazebo_namespace):
                 rospy.loginfo("Calling service %s/unpause_physics"%gazebo_namespace)
                 resp = unpause_physics()
                 return
-        except (rospy.ServiceException, e):
+        except  rospy.ServiceException as e:
                 print ("Service call failed: %s"%e)
 
 
@@ -67,6 +67,6 @@ if __name__ == "__main__":
         rospy.wait_for_service('%s/unpause_physics'%(gazebo_namespace))
         try:
                 success = unpause(gazebo_namespace)
-        except (rospy.ServiceException, e):
+        except rospy.ServiceException as e:
                 print ( "unpause physics service call failed: %s"%e)
             
