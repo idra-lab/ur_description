@@ -198,7 +198,6 @@ safety_k_position="$(arg safety_k_position)"/>
 			
 			<robotNamespace>$(arg robot_name_space)</robotNamespace> <!--TODO1 change this with prefix when you use 2 robots     -->
 			<robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
-			<robotParam>$(arg robot_name_space)/robot_description</robotParam>
 			<legacyModeNS>true</legacyModeNS>
       </plugin>
     </gazebo>

@@ -22,3 +22,12 @@
     wrist_2_joint:  0.75
     wrist_3_joint:  -1.5
 
+gazebo_ros_control:
+  pid_gains:
+    shoulder_pan_joint:   {p: 100.0, i: 0.01, d: 10.0}
+    shoulder_lift_joint:  {p: 100.0, i: 0.01, d: 10.0}
+    elbow_joint:          {p: 80.0,  i: 0.01, d: 8.0}
+    wrist_1_joint:        {p: 20.0,  i: 0.01, d: 2.0}
+    wrist_2_joint:        {p: 15.0,  i: 0.01, d: 1.5}
+    wrist_3_joint:        {p: 10.0,  i: 0.01, d: 1.0}
+
